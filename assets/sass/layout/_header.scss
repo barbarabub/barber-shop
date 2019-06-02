@@ -1,0 +1,28 @@
+.logo {
+	@extend .navbar-brand; 
+	width: 100px;
+
+	&__img {
+		width: 100%;
+	}
+}
+
+.header-image {
+	@extend .container-fluid;
+	background: url(../images/post-image.jpg) no-repeat 80% / cover $white;
+	padding: 20rem;
+
+	&__text {
+		font-family: $playfair;
+		font-weight: $black-italic;
+		font-size: $xx-large;
+	}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 576px) {
+	.header-image__text {
+		font-size: 2.5em;
+
+	}
+}

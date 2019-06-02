@@ -1,0 +1,110 @@
+.main {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.header-image {
+	@extend .container-fluid;
+	background: url(../images/post-image.jpg) no-repeat 80% / cover $white;
+	padding: 20rem;
+
+	&__text {
+		font-family: $playfair;
+		font-weight: 900;
+	}
+}
+
+.article {
+	font-family: $roboto;
+	line-height: 40px;
+
+	&__fecha {
+		font-family: $playfair;
+		font-size: $large;
+	}
+
+	&__destacado {
+		color: pink;
+	}
+
+}
+
+.article__button {
+	font-family: $roboto;
+	border-radius: 50px;
+	background-color: #6c6e70;
+	color: #FFFFFF;
+	padding: 5px 20px 5px 20px;
+
+}
+
+.about {
+	font-family: $roboto;
+	font-size: $medium;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-top: solid 1px gray;
+}
+
+.about__text {
+	font-size: $x-large;
+	color: pink;
+	font-weight: $light;
+
+	&--naomi {
+		font-family: $playfair;	
+		font-size: $x-large;
+		font-weight: $black-italic;
+		color: $black; 
+	}
+
+	&--normal {
+		line-height: 40px;
+	} 
+
+}
+
+.pagination-item {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+}
+	.texto-normal {
+		padding-top: 60px;
+	}
+
+	.about__image {
+		border-radius: 50%;
+		width: 80%;
+	}
+
+	.background {
+	background-color: $light-gray;
+}
+
+.footer-background {
+	background-color: $gray;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 576px) {
+	.buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 0px;
+    	font-size: 13px;
+	}
+	.about__image {
+		margin-left: 30px;
+		width: 70%;
+	}  
+	.about__text {
+		text-align: center;
+	}
+	.about__text--naomi {
+		text-align: center;
+	}
+}
+
+
